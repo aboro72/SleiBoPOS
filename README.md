@@ -11,8 +11,8 @@ anzumelden. Dazu werden die Parameter ip,db_nutzer,db_paswort defeniert.</p>
 <p>Um die Verbindung zum Datenbank Server zu schließen wird folgendes eingegeben:</p>
 <p><i>abmeldungSQL()</i></p>
 <p><b>Beispiel Code:</b></p>
-<p><code>from libpos import mysql<br>
-import time
+<code>from libpos import mysql</code><br>
+<code>import time</code><br>
 <br>
 mysql.anmeldungSQL(ip="127.0.0.1", db_nutzer="root",db_passwort="geheim")<br>
 print("Am Server Angemeldet")<br>
