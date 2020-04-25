@@ -11,7 +11,7 @@ anzumelden. Dazu werden die Parameter ip,db_nutzer,db_paswort defeniert.</p>
 <p>Um die Verbindung zum Datenbank Server zu schließen wird folgendes eingegeben:</p>
 <p><i>abmeldungSQL()</i></p>
 <p><b>Beispiel Code:</b></p>
-<code>from libpos import mysql</code><br>
+<p><code>from libpos import mysql</code><br>
 <code>import time</code><br>
 <br>
 <code>mysql.anmeldungSQL(ip="127.0.0.1", db_nutzer="root",db_passwort="geheim")</code><br>
@@ -20,7 +20,7 @@ anzumelden. Dazu werden die Parameter ip,db_nutzer,db_paswort defeniert.</p>
 <code>time.sleep(5)</code><br>
 <code>mysql.abmeldungSQL()</code><br>
 <code>print("Am Server abgemeldet")</code><br>
-<code>mysql.test()</code>
+<code>mysql.test()</code></p>
 <p>Jetzt solten am ende Fehlermeldungen kommen. Das ist so weil der Datenbankserver nicht mehr verbunden ist.</p>
 <p> Auf dauer sollen die Parameter aber in die config.txt geschrieben und von da auch gelesen werden. </p>
 <p> Des weiteren sollte in Python noch pyMysql installiert werden. Darauf bezieht sich auch die mysql.py.</p>
