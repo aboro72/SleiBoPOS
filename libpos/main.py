@@ -1,10 +1,9 @@
 import os
 import time
-import DoliDBmenu
-import dispconfig
-import mysql
-import libDoli
-import uebungsDBmenu
+from libpos import DoliDBmenu
+from libpos import mysql
+from libpos import libDoli
+from libpos import uebungsDBmenu
 
 
 # Menu 5 Menupunkte
@@ -31,7 +30,7 @@ def menu5():
         exit()
     # Auswahl Menu 4
     elif choice == "4":
-        dispconfig.isp_menu()
+        pass
 
     # Auswahl Menu 3
     elif choice == "3":

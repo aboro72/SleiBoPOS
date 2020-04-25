@@ -1,22 +1,19 @@
 import os
 import time
-import main
-import mysql
-import libDoli
+from libpos import main
 
 
-def ue_menu():
+def dol1_menu():
     os.system('cls')
-    libDoli.logo()
     global choice
     choice = '0'
     while choice == '0':
-        print("uebungsDB Menu: Wähle von 1 -?")
-        print("------------------------------")
-        print("1) Abfrage Name nach Stunden pro Monat")
+        print("Dolibarr Menu: Wähle von 1 - 5")
+        print("---------------------------")
+        print("auswahl1")
         print("auswahl2")
         print("auswahl3")
-        print("4) Freies SQL")
+        print("auswahl4")
         print("5) Hauptmenu")
         choice = input("Bitte Auswählen: ")
 
@@ -25,14 +22,7 @@ def ue_menu():
         main.menu5()
     # Auswahl Menu 4
     elif choice == "4":
-        libDoli.cls()
-        libDoli.logo()
-        mysql.SQLeingabe()
-        time.sleep(2)
-        input("Press Enter to continue...")
-        libDoli.cls()
-        ue_menu()
-
+        pass
 
     # Auswahl Menu 3
     elif choice == "3":
@@ -44,16 +34,10 @@ def ue_menu():
 
     # Auswahl Menu1
     elif choice == "1":
-        libDoli.cls()
-        libDoli.logo()
-        mysql.ue_abfrageName()
-        time.sleep(2)
-        input("Press Enter to continue...")
-        libDoli.cls()
-        ue_menu()
+        pass
 
     # Fehler Abfangen bei der Eingabe
     else:
         print("Nur Zahlen sonst klappt dat nicht.")
         time.sleep(2)
-        ue_menu()
+        dol1_menu()

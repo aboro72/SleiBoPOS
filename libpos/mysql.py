@@ -86,8 +86,9 @@ def ue_mitarbeiter_alle():
         name = row[1]
         vorname = row[2]
         geburtsdatum = row[3]
-        print("MitarbeiterID: %d | Name: %s | Vorname: %s | Geburtsdatum: %s " % (
+        print("MitarbeiterID: %d  | Name: %s    | Vorname: %s   | Geburtsdatum: %s " % (
             MitarbeiterID, name, vorname, geburtsdatum))
+
 
 def SQLeingabe():
     cursor = db.cursor()
@@ -95,4 +96,4 @@ def SQLeingabe():
     sql = "{0}".format(sql_eingabe)
     cursor.execute(sql)
     results = cursor.fetchall()
-    print(results).readline()
+    print(results)

@@ -1,13 +1,9 @@
-import pymysql
 import os
 import time
-import sys
-import dispconfig
-import mysql
 
 
 def todo_start():
-    help1 = open("todo.txt", "r").readline()
+    help1 = open("\text\todo.txt", "r").readline()
     print(help1)
     input("Bitte Enter druecken....")
 
