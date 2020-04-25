@@ -1,3 +1,3 @@
 "# SleiBoPOS" 
 
-Noch in Arbeit.
+Zur Zeit erstmal mit der Übungsdatenbank teste was geht.
