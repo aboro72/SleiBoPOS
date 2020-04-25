@@ -35,16 +35,11 @@ def ispconfigDB():
 
 def test():
     cursor = db.cursor()
-    sql = "SELECT * FROM mitarbeiter"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    for row in results:
-        mitarbeiter_id = row[0]
-        name = row[1]
-        vorname = row[2]
-        geburtsdatum = row[3]
-        print("MitarbeiterID: %d | Name: %s | Vorname: %s | Geburtsdatum: %s " % (
-            mitarbeiter_id, name, vorname, geburtsdatum))
+    # execute SQL query using execute() method.
+    cursor.execute("SELECT VERSION()")
+    # Fetch a single row using fetchone() method.
+    data = cursor.fetchone()
+    print("Database version : %s " % data)
 
 
 def ue_abfrageTest():
