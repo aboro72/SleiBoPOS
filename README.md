@@ -14,14 +14,13 @@ anzumelden. Dazu werden die Parameter ip,db_nutzer,db_paswort defeniert.</p>
 <code>from libpos import mysql</code><br>
 <code>import time</code><br>
 <br>
-mysql.anmeldungSQL(ip="127.0.0.1", db_nutzer="root",db_passwort="geheim")<br>
-print("Am Server Angemeldet")<br>
-mysql.test()<br>
-time.sleep(5)<br>
-mysql.abmeldungSQL()<br>
-print("Am Server abgemeldet")<br>
-mysql.test()
-</code></p>
+<code>mysql.anmeldungSQL(ip="127.0.0.1", db_nutzer="root",db_passwort="geheim")</code><br>
+<code>print("Am Server Angemeldet")</code><br>
+<code>mysql.test()</code><br>
+<code>time.sleep(5)</code><br>
+<code>mysql.abmeldungSQL()</code><br>
+<code>print("Am Server abgemeldet")</code><br>
+<code>mysql.test()</code>
 <p>Jetzt solten am ende Fehlermeldungen kommen. Das ist so weil der Datenbankserver nicht mehr verbunden ist.</p>
 <p> Auf dauer sollen die Parameter aber in die config.txt geschrieben und von da auch gelesen werden. </p>
 <p> Des weiteren sollte in Python noch pyMysql installiert werden. Darauf bezieht sich auch die mysql.py.</p>
