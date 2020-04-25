@@ -1,0 +1,28 @@
+ ____  __    ____  __  ____   __     __  ____
+/ ___)(  )  (  __)(  )(  _ \ /  \   (  )(_  _)
+\___ \/ (_/\ ) _)  )(  ) _ ((  O )   )(   )(
+(____/\____/(____)(__)(____/ \__/   (__) (__)
+
+ Erledigte Aufgaben:
+ -------------------------------------------------------------------------------------
+ Fehler bei Datenbankverbindung abgefangen
+ SQL Problem bezueglich Ausgabe geloest
+ MySQL.py enthaelt funktion zur uebungsdatenbank
+ DoliDBmenu.py enthaelt das untermenu für Dolibarr
+ dispconfig.py enthält Menu zu ISPconfig3
+ start.py ist nur zum starten des Programms und importiert hauptsaechlich libDoli.py
+ libDoli.py enthaelt unsortierte Funktionen und funktionen zum testen
+ mysql.py alle SQL funktionen zusammenfassen
+ libDoli.py ueberarbeiten und Sortieren
+
+######################################################################################
+
+ ToDo Liste:
+ -------------------------------------------------------------------------------------
+ Weitere mögliche Fehler abfangen
+ Hilfe Datei erstellen
+ Konfigurations datei beschreibbar erstellen für erstmal Serververbindung
+ SQL abfrage und eintraege erstellen erstmal in uebungsdatenbank
+ Ueberlegen welche Menustruktur gebraucht wird
+ passwort abfrage aus SQL DB erstellen (eventuell zum test in extra DB)
+ Ganz zum Schluss GUI erstellen

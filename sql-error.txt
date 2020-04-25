@@ -1,0 +1,14 @@
+
+Ihnen ist also gerade die Datenbankverbindung um die Ohren geflogen.
+
+Das ist jetzt kein Beinbruch und relativ leicht zuloesen.
+
+In der start.py steht in dieser Version folgendes in Zeile 9:
+
+libDoli.anmeldungSQL(ip="192.168.0.164", db_nutzer="admin", db_paswort="quaSeu2i")
+
+hier muessen nur die die Parameter ip, db_nutzer sowie db_passwort angepasst gegebenenfals werden.
+
+Vola, fehler geloest.
+
+Andreas
