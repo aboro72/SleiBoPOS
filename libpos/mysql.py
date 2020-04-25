@@ -39,12 +39,12 @@ def test():
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
-        MitarbeiterID = row[0]
+        mitarbeiter_id = row[0]
         name = row[1]
         vorname = row[2]
         geburtsdatum = row[3]
         print("MitarbeiterID: %d | Name: %s | Vorname: %s | Geburtsdatum: %s " % (
-            MitarbeiterID, name, vorname, geburtsdatum))
+            mitarbeiter_id, name, vorname, geburtsdatum))
 
 
 def ue_abfrageTest():
@@ -58,14 +58,14 @@ def ue_abfrageName():
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
-        MitarbeiterID = row[0]
+        mitarbeiter_id = row[0]
         name = row[1]
         vorname = row[2]
         gebdatum = row[3]
         monatsstunden = row[23]
         ueberstunden = row[22]
         print("MitarbeiterID: %d | Name: %s | Vorname: %s | Geburtsdatum: %s | Monatsstunden: %s | Ueberstunden: %s" % (
-            MitarbeiterID, name, vorname, gebdatum, monatsstunden, ueberstunden))
+            mitarbeiter_id, name, vorname, gebdatum, monatsstunden, ueberstunden))
 
 
 def ue_abfrageAdresse():
@@ -82,12 +82,12 @@ def ue_mitarbeiter_alle():
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
-        MitarbeiterID = row[0]
+        mitarbeiter_id = row[0]
         name = row[1]
         vorname = row[2]
         geburtsdatum = row[3]
-        print("MitarbeiterID: %d  | Name: %s    | Vorname: %s   | Geburtsdatum: %s " % (
-            MitarbeiterID, name, vorname, geburtsdatum))
+        print("Mitarbeiter ID: %d  | Name: %s    | Vorname: %s   | Geburtsdatum: %s " % (
+            mitarbeiter_id, name, vorname, geburtsdatum))
 
 
 def SQLeingabe():
