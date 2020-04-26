@@ -2,7 +2,7 @@
 
 <p>Falls jemand interesse dran hat da mit zu Fummeln, in libpos befinden sich die Funktionen.
 in der Funktionssamlung mysql.py ist zum testen folgende Funktion wichtig:</p>
-<p><i>anmeldunSQL()</i></p>
+<p><i>anmeldungSQL()</i></p>
 <p>Diese wird benötigt um sich an einen MariDB oder MySQL Server 
 anzumelden. Dazu werden die Parameter ip,db_nutzer,db_paswort defeniert.</p>
 <p><b>Beispiel:</b></p>
